@@ -1,19 +1,18 @@
 # DSA-C-
 C++ DSA built through continuous learning and hands-on coding.
-<!-- ─────────────────────────────────────────────── -->
+<!-- ───────────────────────────<!-- ─────────────────────────────────────────────── -->
 <!-- 🔥 HEADER ANIMATION -->
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=00F5FF&center=true&vCenter=true&width=900&lines=Welcome+to+My+DSA+in+C%2B%2B+Journey!;Mastering+Data+Structures+and+Algorithms;Building+Strong+Core+Fundamentals;Learning+Every+Single+Day+🚀" />
 </p>
 
 <!-- ─────────────────────────────────────────────── -->
-<!-- 🌈 STYLISH TITLE -->
-<h1 align="center" style="font-family: 'Poppins', sans-serif; font-weight: 800;">
+<h1 align="center">
 🌟 DSA in C++ – My Learning Repository 🌟
 </h1>
 
 <p align="center">
-  <img src="https://i.imgur.com/dZ80F8Z.gif" width="350" />
+  <img src="https://raw.githubusercontent.com/rajput2107/rajput2107/master/Assets/Developer.gif" width="350" />
 </p>
 
 ---
@@ -53,7 +52,7 @@ Structured, clean, beginner-friendly + interview-oriented.
 - 🔸 Dynamic Programming (Basics)  
 
 <p align="center">
-  <img src="https://i.imgur.com/sZ8gkI4.gif" width="400"/>
+  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/code.gif" width="400"/>
 </p>
 
 ---
@@ -93,7 +92,7 @@ DSA-C-
 - Build consistency 🚀  
 
 <p align="center">
-  <img src="https://i.imgur.com/mQZQZ6L.gif" width="400" />
+  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif" width="300" />
 </p>
 
 ---
@@ -112,10 +111,9 @@ I will update this repo **daily/weekly** with:
 
 If you like this repo…  
 ### 👉 **Give it a STAR 🌟**  
-It motivates me to learn more!
 
 <p align="center">
-  <img src="https://i.imgur.com/wLCfYVm.gif" width="300" />
+  <img src="https://raw.githubusercontent.com/rajput2107/rajput2107/master/Assets/Rocket.gif" width="200" />
 </p>
 
 ---
@@ -123,6 +121,7 @@ It motivates me to learn more!
 ### 💙 Thanks for visiting!
 
 <p align="center">
-  <img src="https://i.imgur.com/E2bQZyU.gif" width="200"/>
+  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/wave.gif" width="200"/>
 </p>
+
 
