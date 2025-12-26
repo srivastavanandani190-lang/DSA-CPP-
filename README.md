@@ -86,7 +86,6 @@ DSA-C-
 - Prepare for **coding interviews**  
 - Build consistency 🚀  
  
-
 ---
 
 ## 🌟 Progress Updates
@@ -97,12 +96,7 @@ I will update this repo **daily/weekly** with:
 - Notes  
 - Practice solutions  
 
----
 
  
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/wave.gif" width="200"/>
-</p>
-
+ 
 
