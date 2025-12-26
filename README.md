@@ -50,11 +50,6 @@ Structured, clean, beginner-friendly + interview-oriented.
 - 🔸 Greedy  
 - 🔸 Backtracking  
 - 🔸 Dynamic Programming (Basics)  
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/code.gif" width="400"/>
-</p>
-
 ---
 
 ## 🗂️ Project Structure
@@ -90,10 +85,7 @@ DSA-C-
 - Master **C++ STL**  
 - Prepare for **coding interviews**  
 - Build consistency 🚀  
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/handShake.gif" width="300" />
-</p>
+ 
 
 ---
 
@@ -107,18 +99,7 @@ I will update this repo **daily/weekly** with:
 
 ---
 
-## ⭐ Support
-
-If you like this repo…  
-### 👉 **Give it a STAR 🌟**  
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rajput2107/rajput2107/master/Assets/Rocket.gif" width="200" />
-</p>
-
----
-
-### 💙 Thanks for visiting!
+ 
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/rahulbanerjee26/githubProfileReadmeGenerator/main/gifs/wave.gif" width="200"/>
