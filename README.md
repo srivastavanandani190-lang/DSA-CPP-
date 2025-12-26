@@ -6,8 +6,8 @@
 <p align="center">
   <img 
     src="https://readme-typing-svg.herokuapp.com?
-    font=Orbitron
-    &color=FFD700
+    font=JetBrains+Mono
+    &color=00FFAB
     &center=true
     &vCenter=true
     &width=900
