@@ -45,24 +45,7 @@ Structured, clean, beginner-friendly + interview-oriented.
 - 🔸 Greedy  
 - 🔸 Backtracking  
 - 🔸 Dynamic Programming (Basics)  
----
-
-## 🗂️ Project Structure
-
-```
-DSA-C-
-│
-├── Basics/
-├── Arrays/
-├── Strings/
-├── LinkedList/
-├── Stack_Queue/
-├── Trees/
-├── Graphs/
-├── Sorting/
-├── Searching/
-└── README.md
-```
+ 
 
 ---
 
