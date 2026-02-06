@@ -13,6 +13,8 @@ for(auto i:m){
 if(m.find("Navya")!=m.end()){
     cout<<"Found "<<m["Navya"]<<endl;
 }
+//m.find-->checks if the key is present in the map or not and returns an iterator to the element if found, otherwise it returns an iterator to the end of the map.
+//m.end-->after the last element of the map, it is used to check if the key is present in the map or not.
 for(auto x:m){
 if(x.second>150){
     cout<<x.first<<" "<<x.second<<endl;
