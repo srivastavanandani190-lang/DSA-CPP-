@@ -48,7 +48,31 @@
 //     return 0;
 // }
 
+
 // 3: Given a Number N, check whether it is prime or not using Recursion.
 #include<iostream>
 using namespace std;
 
+bool isPrime(int n, int i=2){
+    if(n<=2){
+        return (n==2); // 2 is prime, 1 and 0 are not
+    }
+    if(n%i==0){
+        return false; // n is divisible by i, hence not prime
+    }
+    if(i*i>n){
+        return true; // No need to check beyond sqrt(n)
+    }
+    return isPrime(n, i+1); // Check for next divisor
+}
+int main(){
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    if(isPrime(n)){
+        cout<<n<<" is a prime number."<<endl;
+    } else {
+        cout<<n<<" is not a prime number."<<endl;
+    }
+    return 0;
+}
