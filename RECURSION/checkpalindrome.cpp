@@ -8,8 +8,9 @@ bool checkPalindrome(string str, int s, int e) {
     if (str[s] != str[e]) {
         return false;
     }
+    else {
     return checkPalindrome(str, s + 1, e - 1);
-}
+}}
 int main() {
     string str = "namon";
     int n = str.length();
