@@ -24,5 +24,13 @@ sort(v.begin(),v.end());
 for(auto x:v){
     cout<<x.first<<" "<<x.second<<endl;
 }
+   
+auto comp=[](pair<string,int> a,pair<string,int> b){
+    return a.second>b.second; //sort in descending order based on marks
+};
+sort(v.begin(),v.end(),comp);   
+for(auto x:v){
+    cout<<x.first<<" "<<x.second<<endl;
+}
     return 0;
 }
