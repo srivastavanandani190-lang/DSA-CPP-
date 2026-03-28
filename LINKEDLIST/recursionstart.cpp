@@ -9,19 +9,21 @@ class Node{
         this->next=NULL;
     }
 };
-Node* insertstart(int arr[],int n,int size){
+Node* insertstart(int arr[],int n,int size,Node* prev){
     if(n>=size){
-        return NULL;
+        return prev;
     }
-    Node* newNode=new Node(arr[n]);
-    newNode->next=insertstart(arr,n+1,size);
-    return newNode;
+    Node* temp;
+    temp=new Node(arr[n]);
+    temp->next=prev;
+    return insertstart(arr,n+1,size,temp);
 }
+
 int main(){
     Node* head;
     head=NULL;
     int arr[]={1,2,3,4,5};
-    head=insertstart(arr,0,5);    
+    head=insertstart(arr,0,5,NULL);    
     
     Node* temp=head;
     while(temp!=NULL){
