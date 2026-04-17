@@ -10,10 +10,18 @@ int main()
     l.push_back(4);
     l.push_back(5);
 
-    for (int i : l)
-    {
-        cout << i << " ";
+    // for (int i : l)
+    // {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
+    for(auto it = l.begin(); it != l.end(); it++){
+        cout<<*it<<" ";
     }
+    cout << endl;
+    for(auto it = l.rbegin(); it != l.rend(); it++){
+        cout<<*it<<" ";
+    }   
     cout << endl;
 
     list<int> l2(l);
@@ -63,6 +71,10 @@ int main()
     cout<<l.back()<<endl;
     cout << l.size() << endl;
     return 0;
+
+
+
+
 }
 // implemented using doubly linked list and it is a sequence container that allows non-contiguous memory allocation.
 // It provides fast insertion and deletion at both ends of the list, but slower access to elements in the middle compared to vectors.
