@@ -33,6 +33,15 @@ int main()
     {
         cout<<"Element not found"<<endl;
     }
+    unordered_multiset<string> ms;
+    ms.insert("hello");
+    ms.insert("world");
+    ms.insert("hello");
+    for(auto it : ms)
+    {
+        cout<<it<<" ";
+    }
+    cout<<endl;
 
     return 0;
 }
