@@ -17,6 +17,12 @@ vector<int>v3={1,2,3,5,6};
 cout<<"Size of v3:"<<v3.size()<<"\n";
 v3.push_back(10);
 cout<<"Capacity of v3:"<<v3.capacity()<<"\n";//5+5=10
+reverse(v3.begin(),v3.end());
+cout<<"After reversing\n";
+for(auto it=v3.begin();it!=v3.end();it++){
+    cout<<*it<<" ";
+}
+cout<<"\n";
 
 vector<int>v;
 cout<<"Size of v:"<<v.size()<<"\n";
@@ -55,6 +61,7 @@ for(auto it=v.rbegin();it!=v.rend();it++){
 }
 //copying vector
 vector<int>v2(v);
+
 
 //search in vector
 cout<<"\n";
