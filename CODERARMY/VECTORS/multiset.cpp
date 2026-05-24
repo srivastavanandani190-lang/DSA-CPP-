@@ -1,6 +1,6 @@
 //multiset consists of multiple values of the same type.
-//It is an associative container that contains a sorted set of objects of type Key.
-//Unlike set, multiple keys with the same value are allowed in multiset.
+//It is an associative container that contains a sorted set of objects.
+//Unlike set, multiple same value are allowed in multiset.
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,6 +20,7 @@ int main()
     for(auto it:s){
         cout<<it<<" ";
     }
+
 
     return 0;
 }
