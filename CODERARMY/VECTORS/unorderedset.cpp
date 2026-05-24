@@ -33,7 +33,7 @@ int main()
     {
         cout<<"Element not found"<<endl;
     }
-    unordered_multiset<string> ms;
+    unordered_multiset<string> ms;//allows duplicate elements
     ms.insert("hello");
     ms.insert("world");
     ms.insert("hello");
@@ -45,3 +45,8 @@ int main()
 
     return 0;
 }
+//set-multiset-unorderedset-unorderedmultiset
+//set-stores unique elements in sorted order
+//multiset-stores duplicate elements in sorted order
+//unorderedset-stores unique elements in no particular order
+//unorderedmultiset-stores duplicate elements in no particular order
