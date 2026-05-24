@@ -3,8 +3,7 @@
 using namespace std;
 int main(){
     pair<int,int> p1;
-    p1.first = 10;
-    p1.second = 20;
+    p1=make_pair(10,20);
     cout<<p1.first<<" "<<p1.second<<endl;
 
     pair<int,string> p2;
@@ -16,6 +15,7 @@ int main(){
     p3.first = "CODER ARMY";
     p3.second.first = 1000;
     p3.second.second = 2000;
+    //p3=make_pair("CODER ARMY",make_pair(1000,2000));
     cout<<p3.first<<" "<<p3.second.first<<" "<<p3.second.second<<endl;
 
    pair<pair<string,int> ,int> p4;
