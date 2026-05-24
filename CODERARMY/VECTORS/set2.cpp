@@ -18,8 +18,8 @@ int main()
     set<Person> s;
     Person p1, p2, p3;
     p1.age = 20, p1.name = "Honey";
-    p2.age = 21, p2.name = "Bunny";
-    p3.age = 22, p3.name = "Nilli";
+    p2.age = 32, p2.name = "Bunny";
+    p3.age = 2, p3.name = "Nilli";
     s.insert(p1);
     s.insert(p2);
     s.insert(p3);
