@@ -19,3 +19,4 @@ int main()
 //unordered map is implemented using hash table
 //average time complexity of search, insert and delete is O(1) in unordered map
 //unordered map is not implemented using balanced binary search tree like map
+//use unordered map when we don't care about the order of keys and we want faster search, insert and delete operations
