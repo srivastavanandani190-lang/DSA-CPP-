@@ -13,3 +13,5 @@ int main(){
     }
     return 0;
 }
+//multimap is a associative container that contains a sorted list of key-value pairs, 
+//where multiple pairs can have the same key. It is similar to a map, but it allows duplicate keys
