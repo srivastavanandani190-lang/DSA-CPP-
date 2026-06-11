@@ -50,6 +50,9 @@ public:
     {
         return top == size - 1;
     }
+   int sizestack(){
+    return top+1;
+   }
 };
 int main()
 {
@@ -64,5 +67,6 @@ int main()
     cout << s.peek() << endl; // 4
     cout << s.isEmpty() << endl; // 0
     cout << s.isFull() << endl; // 0
+    cout<< s.sizestack()<<"\n";
     return 0;
 }
