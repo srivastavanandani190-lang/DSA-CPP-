@@ -1,75 +1,102 @@
-//IMPLEMENTING QUEUE USING ARRAY
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-
+ 
 class Queue{
-    int front,rear,size;
+    int front;
+    int rear;
+    int size;
     int *arr;
     public:
-    Queue(int n){
-        front=rear=-1;
-        size=n;
-        arr=new int[n];
-    }   
-bool isFull(){
-    return (rear==size-1 && front==0);
-}
-bool isEmpty(){
-    return (front==-1 || front>rear);
-}
-int push(int x){
-    if(isFull()){
-        cout<<"Queue is full"<<endl;
-        return -1;
+    Queue(int s){
+        front = -1;
+        rear = -1;
+        size = s;
+        arr = new int[s];
     }
-    else{
-        if(front==-1) front=0;//if queue is empty, set front to 0
-        rear++;
-        arr[rear]=x;
-        cout<<x<<" pushed into queue"<<endl;
+    bool isFull(){
+        return (front == 0 && rear == size-1);
     }
-}
-int pop(){
-    if(isEmpty()){
-        cout<<"Queue is empty"<<endl;
-        return -1;
+    bool isEmpty(){
+        return front == -1;
     }
-    else if(front==rear){
-        int x=arr[front];
-        front=rear=-1;
-        cout<<x<<" popped from queue"<<endl;
-        return x;
+    int enqueue(int value){
+        if(isFull()){
+            cout<<"Queue is full"<<endl;
+            return -1;
+        }
+        else if(isEmpty()){
+            front = rear = 0;
+            arr[rear] = value;
+        }
+        else{
+            rear++;
+            arr[rear] = value;
+        }
     }
-
-    else{
-        int x=arr[front];
-        front++;
-        cout<<x<<" popped from queue"<<endl;
-        return x;
+    int dequeue(){
+        if(isEmpty()){
+            cout<<"Queue is empty"<<endl;
+            return -1;
+        }
+        int data = arr[front];
+        if(front == rear){
+            front = rear = -1;
+        }
+        else{
+            front++;
+        }
+        return data;
     }
-}
-int peek(){
-    if(isEmpty()){
-        cout<<"Queue is empty"<<endl;
-        return -1;
-    }
-    else{
+    int getFront(){
+        if(isEmpty()){
+            cout<<"Queue is empty"<<endl;
+            return -1;
+        }
         return arr[front];
     }
-}
+    void display() {
+        if (isEmpty()) {
+            cout << "Queue is empty" << endl;
+            return;
+        }
+
+        cout << "Queue elements: ";
+        for (int i = front; i <= rear; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+    
+     ~Queue() {
+        delete[] arr;
+    }
 };
-int main(){
+int main() {
     Queue q(5);
-    q.push(10);
-    q.push(20);
-    q.push(30);
-    cout<<"Front element is: "<<q.peek()<<endl;
-    q.pop();
-    cout<<"Front element is: "<<q.peek()<<endl;
-    q.isEmpty() ? cout<<"Queue is empty"<<endl : cout<<"Queue is not empty"<<endl;
+
+    q.enqueue(10);
+    q.enqueue(20);
+    q.enqueue(30);
+    q.enqueue(40);
+    q.enqueue(50);
+
+    q.display();
+
+    cout << "Dequeued: " << q.dequeue() << endl;
+    cout << "Dequeued: " << q.dequeue() << endl;
+
+    q.display();
+
+    q.enqueue(60);   // Will show "Queue is full" in linear queue
+
+    cout << "Front: " << q.getFront() << endl;
+
     return 0;
 }
 
+ 
 
+   
+ 
 
