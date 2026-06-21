@@ -26,7 +26,7 @@ class Queue{
     }
     void enqueue(int data){
         Node* newNode=new Node(data);
-        if(front==NULL){
+        if(isEmpty()){
             front=newNode;
             rear=newNode;
         }
@@ -37,7 +37,7 @@ class Queue{
         size++;
     }
     void dequeue(){
-        if(front==NULL){
+        if(isEmpty()){
             cout<<"Queue is empty"<<endl;
             return;
         }
@@ -47,14 +47,14 @@ class Queue{
         size--;
     }
     int getFront(){
-        if(front==NULL){
+        if(isEmpty()){
             cout<<"Queue is empty"<<endl;
             return -1;
         }
         return front->data;
     }
     int getRear(){
-        if(rear==NULL){
+        if(isEmpty()){
             cout<<"Queue is empty"<<endl;
             return -1;
         }
@@ -63,12 +63,27 @@ class Queue{
     int getSize(){
         return size;
     }
+
+void display(){
+        if(isEmpty()){
+            cout<<"Queue is empty"<<endl;
+            return;
+        }
+        Node* temp=front;
+        while(temp!=NULL){
+            cout<<temp->data<<" ";
+            temp=temp->next;
+        }
+        cout<<endl;
+    }
 };
 int main(){
     Queue q;
-    q.enqueue(1);
-    q.enqueue(2);
-    q.enqueue(3);
+    q.enqueue(11);
+    q.enqueue(22);
+    q.enqueue(33);
+    q.enqueue(44);
+    q.enqueue(55);
     cout<<"Front: "<<q.getFront()<<endl;
     cout<<"Rear: "<<q.getRear()<<endl;
     cout<<"Size: "<<q.getSize()<<endl;
@@ -76,8 +91,9 @@ int main(){
     cout<<"Front: "<<q.getFront()<<endl;
     cout<<"Rear: "<<q.getRear()<<endl;
     cout<<"Size: "<<q.getSize()<<endl;
-    q.dequeue();
-    q.dequeue();
+    // q.dequeue();
+    // q.dequeue();
+    q.display();
     q.isEmpty() ? cout<<"Queue is empty"<<endl : cout<<"Queue is not empty"<<endl;
     return 0;
 }
