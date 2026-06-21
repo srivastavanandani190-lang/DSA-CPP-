@@ -53,6 +53,9 @@ public:
    int sizestack(){
     return top+1;
    }
+   ~stack(){
+    delete[] arr;
+   };
 };
 int main()
 {
