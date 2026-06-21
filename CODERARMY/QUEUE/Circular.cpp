@@ -69,7 +69,6 @@ class CircularQueue{
     void display(){
         if(isEmpty()){
             cout<<"Queue is empty"<<endl;
-            return;
         }
         cout<<"Queue elements are: ";
         if(rear >= front){
@@ -102,7 +101,7 @@ int main(){
     q.enqueue(5);
     q.display();
     q.dequeue();
-    q.display();
+    cout<<"Rear element: "<<q.getRear()<<endl;
     cout<<"Front element: "<<q.getFront()<<endl;
     q.enqueue(6);
     q.display();
