@@ -14,16 +14,18 @@ class CircularQueue{
         size = s;
         arr = new int[s];
     }
+
     bool isFull(){
         return (front == 0 && rear == size-1) || ((rear+1)%size == front);
     }
+
     bool isEmpty(){
         return front == -1;
     }
-    int enqueue(int value){
+
+    void enqueue(int value){
         if(isFull()){
             cout<<"Queue is full"<<endl;
-            return -1;
         }
         else if(isEmpty()){
             front = rear = 0;
@@ -34,10 +36,10 @@ class CircularQueue{
             arr[rear] = value;
         }
     }
-    int dequeue(){
+
+    void dequeue(){
         if(isEmpty()){
             cout<<"Queue is empty"<<endl;
-            return -1;
         }
         int data = arr[front];
         if(front == rear){
@@ -46,8 +48,24 @@ class CircularQueue{
         else{
             front = (front+1)%size;
         }
-        return data;
     }
+
+    int getFront(){
+        if(isEmpty()){
+            cout<<"Queue is empty"<<endl;
+            return -1;
+        }
+        return arr[front];
+    }
+
+    int getRear(){
+        if(isEmpty()){
+            cout<<"Queue is empty"<<endl;
+            return -1;
+        }
+        return arr[rear];
+    }
+
     void display(){
         if(isEmpty()){
             cout<<"Queue is empty"<<endl;
@@ -69,14 +87,12 @@ class CircularQueue{
         }
         cout<<endl;
     }
-    int getFront(){
-        if(isEmpty()){
-            cout<<"Queue is empty"<<endl;
-            return -1;
-        }
-        return arr[front];
+    
+      ~CircularQueue() {
+        delete[] arr;
     }
 };
+
 int main(){
     CircularQueue q(5);
     q.enqueue(1);
@@ -85,7 +101,7 @@ int main(){
     q.enqueue(4);
     q.enqueue(5);
     q.display();
-    cout<<"Dequeued element: "<<q.dequeue()<<endl;
+    q.dequeue();
     q.display();
     cout<<"Front element: "<<q.getFront()<<endl;
     q.enqueue(6);

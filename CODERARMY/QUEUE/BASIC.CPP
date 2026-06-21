@@ -14,16 +14,18 @@ class Queue{
         size = s;
         arr = new int[s];
     }
+
     bool isFull(){
         return (front == 0 && rear == size-1);
     }
+
     bool isEmpty(){
-        return front == -1;
+        return (front == -1 || front > rear);
     }
-    int enqueue(int value){
+
+    void enqueue(int value){
         if(isFull()){
             cout<<"Queue is full"<<endl;
-            return -1;
         }
         else if(isEmpty()){
             front = rear = 0;
@@ -34,20 +36,18 @@ class Queue{
             arr[rear] = value;
         }
     }
-    int dequeue(){
+    
+    void dequeue(){
         if(isEmpty()){
             cout<<"Queue is empty"<<endl;
-            return -1;
         }
         int data = arr[front];
-        if(front == rear){
-            front = rear = -1;
-        }
-        else{
+        // if(front == rear){
+        //     front = rear = -1;
+        // }
             front++;
-        }
-        return data;
     }
+
     int getFront(){
         if(isEmpty()){
             cout<<"Queue is empty"<<endl;
@@ -55,10 +55,19 @@ class Queue{
         }
         return arr[front];
     }
+
+    int getRear(){
+        if(isEmpty()){
+            cout<<"Queue is empty"<<endl;
+            return -1;
+        }
+        return arr[rear];
+    }
+
+
     void display() {
         if (isEmpty()) {
             cout << "Queue is empty" << endl;
-            return;
         }
 
         cout << "Queue elements: ";
@@ -74,7 +83,6 @@ class Queue{
 };
 int main() {
     Queue q(5);
-
     q.enqueue(10);
     q.enqueue(20);
     q.enqueue(30);
@@ -83,14 +91,19 @@ int main() {
 
     q.display();
 
-    cout << "Dequeued: " << q.dequeue() << endl;
-    cout << "Dequeued: " << q.dequeue() << endl;
+    q.dequeue();
+    q.dequeue();
 
     q.display();
 
-    q.enqueue(60);   // Will show "Queue is full" in linear queue
-
+    q.enqueue(60);   
+    cout << "Rear: " << q.getRear() << endl;
     cout << "Front: " << q.getFront() << endl;
+    q.dequeue();
+    q.dequeue();
+    q.dequeue();
+    q.dequeue();  
+    q.isEmpty() ? cout << "Queue is empty" << endl : cout << "Queue is not empty" << endl;
 
     return 0;
 }
