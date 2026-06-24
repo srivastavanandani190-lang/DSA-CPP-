@@ -115,3 +115,17 @@ int main(){
     dq.display();
     return 0;
 }
+// // Full
+// (rear + 1) % size == front
+
+// // Move rear forward
+// rear = (rear + 1) % size;
+
+// // Move front backward
+// front = (front - 1 + size) % size;
+
+// // Move front forward
+// front = (front + 1) % size;
+
+// // Move rear backward
+// rear = (rear - 1 + size) % size;
