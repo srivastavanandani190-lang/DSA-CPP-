@@ -1,0 +1,19 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    priority_queue<int, vector<int>, greater<int>> pq; // Min-heap
+    pq.push(10);
+    pq.push(20);
+    pq.push(15);
+
+    cout << "The top element is: " << pq.top() << endl; // Should print 10
+
+    pq.pop();
+    cout << "After popping, the top element is: " << pq.top() << endl; // Should print 15
+
+    cout << "The size of the priority queue is: " << pq.size() << endl; // Should print 2
+    
+    return 0;
+}
