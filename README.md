@@ -14,22 +14,22 @@
 
 ---
 
-## 📘 About This Repository
+## 📘About This Repository
 ### **⚡ Data Structures and Algorithms using C++ ⚡**
 This repo contains everything I learn while mastering C++ DSA. 
 Structured, clean, beginner-friendly + interview-oriented.
 
 ---
 
-## 🚀 What’s Included?
+## 🚀What’s Included?
 
-### 🌟 **C++ Basics**
+### 🌟**C++ Basics**
 - Variables, Loops, Patterns  
 - Functions, Recursion  
 - Memory, Pointers  
 - OOP Essentials  
 
-### 🌱 **Core Data Structures**
+### 🌱**Core Data Structures**
 - 🔹 Arrays  
 - 🔹 Strings  
 - 🔹 Linked Lists  
@@ -39,7 +39,7 @@ Structured, clean, beginner-friendly + interview-oriented.
 - 🔹 Hash Maps  
 - 🔹 Graphs  
 
-### ⚙️ **Algorithms**
+### ⚙️**Algorithms**
 - 🔸 Searching  
 - 🔸 Sorting  
 - 🔸 Greedy  
@@ -49,7 +49,7 @@ Structured, clean, beginner-friendly + interview-oriented.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️Tech Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=cpp,vscode,github" />
@@ -57,7 +57,7 @@ Structured, clean, beginner-friendly + interview-oriented.
 
 ---
 
-## 🎯 My Goals
+## 🎯My Goals
 - Build rock-solid **DSA foundation**  
 - Improve **logic building**  
 - Master **C++ STL**  
@@ -66,7 +66,7 @@ Structured, clean, beginner-friendly + interview-oriented.
  
 ---
 
-## 🌟 Progress Updates
+## 🌟Progress Updates
 
 I will update this repo **daily/weekly** with:
 - New programs  
