@@ -65,14 +65,7 @@ Structured, clean, beginner-friendly + interview-oriented.
 - Build consistency 🚀  
  
 ---
-
-## 🌟Progress Updates
-
-I will update this repo **daily/weekly** with:
-- New programs  
-- Concepts  
-- Notes  
-- Practice solutions  
+ 
 
 
  
