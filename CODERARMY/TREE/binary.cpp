@@ -31,8 +31,12 @@ Node * Binarytree(){
    return temp;
 }
 int main(){
+
     cout<<"Enter the value of root node: ";
     Node* root=Binarytree();
+    //can we call Binarytree directly without storing it in root?
+    //Yes, we can call Binarytree directly but we won't be able to access the root node later in the program.
+    //Storing it in a variable allows us to reference the root node and traverse the tree or perform other operations on it later.
     cout<<"Root value is: "<<root->data<<endl;
 
     return 0;
