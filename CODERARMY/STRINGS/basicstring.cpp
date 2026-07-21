@@ -22,7 +22,14 @@ int main(){
 
     //escape characters
     cout<<"hello \"honey\"";
-
     
+    //concatenation
+    string s1="good";
+    string s2="morning";
+    string s3=s1+s2;
+    string s4=s1.append(s2);
+    cout<<endl<<s3<<endl;
+    cout<<s4<<endl;
+
     return 0;
 }
